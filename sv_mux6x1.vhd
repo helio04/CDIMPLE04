@@ -15,11 +15,11 @@ begin
 
 	muxx: for k in 0 to 6 generate
 		Im(k) <= (C5(k) and S2 and not(S1) and S0) or
-             (C4(k) and S2 and not(S1) and not(S0)) or
-             (C3(k) and not(S2) and S1 and S0) or
-			       (C2(k) and not(S2) and S1 and not(S0)) or
-		 	       (C1(k) and not(S2) and not(S1) and S0) or
-		 	       (C0(k) and not(S2) and not(S1) and not(S0));
+         	         (C4(k) and S2 and not(S1) and not(S0)) or
+         	         (C3(k) and not(S2) and S1 and S0) or
+			 (C2(k) and not(S2) and S1 and not(S0)) or
+		 	 (C1(k) and not(S2) and not(S1) and S0) or
+		 	 (C0(k) and not(S2) and not(S1) and not(S0));
 	end generate muxx;
   
 end architecture;
