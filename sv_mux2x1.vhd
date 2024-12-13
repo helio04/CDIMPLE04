@@ -9,7 +9,7 @@ entity sv_mux2x1 is
       S: in std_logic;
       C1, C0: in std_logic_vector(9 downto 0);
       V: out std_logic_vector (9 downto 0));
-end mux_4x1;
+end sv_mux2x1;
  
 architecture main of sv_mux2x1 is 
 begin
