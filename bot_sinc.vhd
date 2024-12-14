@@ -21,10 +21,10 @@ end component;
 begin
 
 ff0: ffd port map (d => ((q0 and cin) or (q1)), clk => clk,
-          	   q => q0;
+          	   q => q0);
 
 ff1: ffd port map (d => (not(q0) and not(q1) and cin), clk => clk,
-          	   q => q1;
+          	   q => q1);
 
 cout <= not(q0) and not(q1) and cin;
 end architecture;
