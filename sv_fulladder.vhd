@@ -13,5 +13,3 @@ begin
 	s <= (not(a) and not(b) and ci) or (not(a) and b and not(ci)) or (a and not(b) and not(ci)) or (a and b and ci) ;
 	co <= (a and b) or (ci and (a or b));
 end architecture;
-
--- subtrator
