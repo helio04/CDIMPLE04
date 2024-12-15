@@ -2,14 +2,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 
-entity testemagico is
+entity sligar is
 	port(inQ1, inQ2,inQ3,inQ4,inQ5, inQ6 : in std_logic_vector(9 downto 0);
 		estadoligar,clk : in std_logic;
 		D : out std_logic;
 		outI : out std_logic_vector(5 downto 0));
 end entity;
 
-architecture mestre of testemagico is
+architecture mestre of sligar is
 component Comparador10 is
     port (
         A, B : in  std_logic_vector(9 downto 0);       
